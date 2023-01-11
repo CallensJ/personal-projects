@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: lightGray;
+}
+
+@media (max-width: 768px) {
+  #container {
+    border: 2px solid red;
+  }
+  #container h1 {
+    color: red;
+  }
+}
+@media (min-width: 768px) {
+  #container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid blue;
+    width: 30%;
+  }
+}/*# sourceMappingURL=styles.css.map */
