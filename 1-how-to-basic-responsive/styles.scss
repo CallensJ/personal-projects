@@ -27,8 +27,7 @@ body {
   background-color: black;
 }
 
-//max with media queries ( from 0px to 768px , the container border will be red;
-//above 768px the border will be blue;
+//max-width
 //inside 0 - 768px styled are applied, outside they are not;.
 @media (max-width: $bp-desktop) {
 body{
