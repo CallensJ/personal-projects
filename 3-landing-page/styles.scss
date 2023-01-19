@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@300;400&display=swap");
+
+//COULEURS
+
+$color-primary: rgb(112, 112, 112);
+$primary-background-color: #181818;
+$color-secondary: #fbfbfb;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: $primary-background-color;
+  background: radial-gradient(ellipse at left, #4d4d4d 0%, #000000 100%);
+  height: 100vh;
+}
+
+header{
+    
+
+    .navigation {
+    
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    
+      .logo {
+        color: $color-secondary;
+        font-family: "Montserrat", sans-serif;
+        padding-left: 1rem;
+        font-size: 1.6rem;
+      }
+    
+      .navigation__items {
+        display: flex;
+        justify-content: space-evenly;
+        width: 30%;
+    
+        .navigation__link {
+          color: $color-primary;
+          font-size: 1.6rem;
+        }
+        .navigation__link:hover {
+          color: $color-secondary;
+          transition: all 0.3s;
+        }
+      }
+    }
+
+    .hero__title{
+        
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: $color-secondary;
+
+        span{
+            font-size: 1.6rem;
+            letter-spacing: .5rem;
+        }
+
+        h1{
+            font-family: 'Roboto';
+            font-weight: 300;
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+            letter-spacing: .5rem;
+        }
+
+    
+    }
+}
+
+
+@media(max-width: 400px){
+    header{
+        .navigation{
+            flex-direction: column;
+            padding-top: 1rem;
+
+            .navigation__items{
+                flex-direction: column;
+                
+                align-items: center;
+                padding-top: 1rem;
+
+                .navigation__item{
+                    padding-top: 1rem;
+                }
+
+                
+                .navigation__link{
+                    color: $color-secondary;
+                    font-size: 1.4rem;
+                }
+            }
+        }
+        .logo{
+            font-size: 1.4rem;
+        }
+    }
+}
