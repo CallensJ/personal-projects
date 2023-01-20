@@ -1,15 +1,22 @@
+
 const modal = document.querySelector(".modal");
-const btnOpen = document.querySelector(".btn-open");
-const btnClose = document.querySelector(".btn-close");
+const btn = document.querySelector(".btn");
+
 
 
 const openModal = function () {
+    
     modal.classList.remove("hidden");
+    btn.style.backgroundColor ='#000339';
 
 }
-const closeModal = function () {
-    modal.classList.add("hidden");
+window.onclick = function (e) {
+    if (e.target === modal) {
+        modal.classList.add("hidden");
+        btn.style.backgroundColor = "#d6d2d2";
+
+    }
 }
 
-btnOpen.addEventListener("click",openModal);
-btnClose.addEventListener("click",closeModal);
+
+btn.addEventListener("click",openModal);

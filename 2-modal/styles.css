@@ -26,7 +26,7 @@ section {
 }
 section .modal {
   border: 1px solid black;
-  background-color: rgb(0, 3, 57);
+  background-color: #000339;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,11 +44,12 @@ section .hidden {
   display: none;
 }
 section .container {
-  width: 300px;
+  width: 350px;
   border: 1px solid black;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem;
 }
 section .container .profil {
   display: flex;
@@ -67,7 +68,5 @@ section .container .btn {
   height: 30px;
   border: none;
   cursor: pointer;
-}
-section .container .btn-close {
-  background-color: rgb(0, 3, 57);
+  background-color: #d6d2d2;
 }/*# sourceMappingURL=styles.css.map */
