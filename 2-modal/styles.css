@@ -15,6 +15,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: #e3f6f7;
 }
 
 section {
@@ -40,16 +41,21 @@ section .modal {
 section .modal p {
   color: #ffffff;
 }
+section .modal .social__icons .social-icon {
+  margin-right: 0.5rem;
+}
 section .hidden {
   display: none;
 }
 section .container {
   width: 350px;
-  border: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+  border-radius: 1rem;
+  background-color: white;
 }
 section .container .profil {
   display: flex;
@@ -62,6 +68,9 @@ section .container .profil .profile-image {
   -o-object-fit: cover;
      object-fit: cover;
 }
+section .container .profil h2 {
+  padding-left: 1rem;
+}
 section .container .btn {
   border-radius: 50%;
   width: 30px;
@@ -69,4 +78,7 @@ section .container .btn {
   border: none;
   cursor: pointer;
   background-color: #d6d2d2;
+}
+section .container .btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }/*# sourceMappingURL=styles.css.map */
