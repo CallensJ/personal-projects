@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+}
+.container .header {
+  background-color: green;
+}
+.container .about {
+  background-color: yellow;
+}
+.container .gallery {
+  background-color: red;
+}
+.container .contact {
+  background-color: salmon;
+}/*# sourceMappingURL=styles.css.map */

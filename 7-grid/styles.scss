@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    display: grid;
+    
+
+    .header{
+        background-color: green;
+    }
+
+    .about{
+        background-color: yellow;
+    }
+
+    .gallery{
+        background-color: red;
+
+    }
+
+    .contact{
+        background-color: salmon;
+    }
+}
+
