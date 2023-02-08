@@ -1,0 +1,60 @@
+//general setup
+
+//color variables
+$color-primary: #dedddd;
+$color-secondary: #cb0b39;
+
+$color-bg-primary: #0e0e0e;
+$color-bg-secondary: #4f4f4f;
+
+//breakpoints
+$bp-large: 1440px;
+$bp-medium: 600px;
+$bp-small: 400px;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  background: $color-bg-primary;
+  background: linear-gradient(90deg, rgba(14,14,14,1) 0%, rgba(61,61,61,1) 100%);
+  color: $color-primary;
+  
+}
+
+section,header{
+  width: 100vw;
+}
+
+.container {
+  width: $bp-large;
+  margin: 0 auto;
+
+  
+}
+
+@media screen and (max-width:$bp-medium){
+  .container{
+    background: red;
+  }
+}
+
+@media screen and (max-width:$bp-small){
+  .container{
+    background: black;  
+  }
+}

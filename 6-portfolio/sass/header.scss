@@ -1,0 +1,40 @@
+.header {
+  height: 100vh;
+  .container {
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 8rem;
+
+      .nav__items {
+        width: 30rem;
+        display: flex;
+        justify-content: space-between;
+
+        .nav-item {
+          .nav-link {
+            color: $color-primary;
+            font-size: 1.6rem;
+            font-weight: 500;
+          }
+        }
+      }
+
+      .nav-contact {
+        .contact-icon {
+          margin-left: 2rem;
+          
+          a{
+              padding: 1rem; 
+
+          }
+        }
+
+        .btn {
+          margin-left: 4rem;
+        }
+      }
+    }
+  }
+}

@@ -1,4 +1,73 @@
+.about {
+  background-color: yellowgreen; }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  list-style-type: none;
+  text-decoration: none; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  background: #0e0e0e;
+  background: linear-gradient(90deg, #0e0e0e 0%, #3d3d3d 100%);
+  color: #dedddd; }
+
+section, header {
+  width: 100vw; }
+
 .container {
-  display: grid;
-  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
-  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+  width: 1440px;
+  margin: 0 auto; }
+
+@media screen and (max-width: 600px) {
+  .container {
+    background: red; } }
+
+@media screen and (max-width: 400px) {
+  .container {
+    background: black; } }
+
+.btn {
+  border: 1px solid #cb0b39;
+  padding: 1rem 3rem;
+  color: #dedddd;
+  cursor: pointer;
+  background: transparent;
+  border-radius: .5rem; }
+
+.header {
+  height: 100vh; }
+  .header .container .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem; }
+    .header .container .nav .nav__items {
+      width: 30rem;
+      display: flex;
+      justify-content: space-between; }
+      .header .container .nav .nav__items .nav-item .nav-link {
+        color: #dedddd;
+        font-size: 1.6rem;
+        font-weight: 500; }
+    .header .container .nav .nav-contact .contact-icon {
+      margin-left: 2rem; }
+      .header .container .nav .nav-contact .contact-icon a {
+        padding: 1rem; }
+    .header .container .nav .nav-contact .btn {
+      margin-left: 4rem; }
+
+.portfolio {
+  background-color: violet; }
+
+.contact {
+  background-color: salmon; }
