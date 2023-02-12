@@ -4,18 +4,38 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: black;
+}
+
 .container {
   display: grid;
+  width: 100vw;
+  grid-template-rows: 100vh 70vh 70vh 90vh;
+  grid-template-columns: 1fr repeat(12, 12rem) 1fr;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
 }
 .container .header {
-  background-color: green;
+  grid-column: 1/-1;
+  background-color: yellowgreen;
+}
+.container .header nav {
+  border: 1px solid black;
 }
 .container .about {
+  grid-column: 2/span 12;
   background-color: yellow;
 }
 .container .gallery {
+  grid-column: 1/-1;
   background-color: red;
 }
 .container .contact {
+  grid-column: 2/span 12;
   background-color: salmon;
 }/*# sourceMappingURL=styles.css.map */

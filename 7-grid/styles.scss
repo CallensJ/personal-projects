@@ -1,29 +1,48 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
 
-.container{
-    display: grid;
+body{
+  background-color:black;
+}
+
+.container {
+display: grid;
+width: 100vw;
+grid-template-rows: 100vh 70vh 70vh 90vh;
+grid-template-columns:1fr repeat(12, 12rem) 1fr;
+column-gap:.5rem;
+
+
     
 
-    .header{
-        background-color: green;
+.header{
+        grid-column: 1 / -1;
+        background-color: yellowgreen;
+  
+        
     }
 
-    .about{
-        background-color: yellow;
-    }
 
-    .gallery{
-        background-color: red;
+  .about {
+    grid-column: 2 / span 12;
+    background-color: yellow;
+  }
 
-    }
+  .gallery {
+    grid-column: 1 / -1;
+    background-color: red;
+  }
 
-    .contact{
-        background-color: salmon;
-    }
+  .contact {
+    grid-column: 2 / span 12;
+    background-color: salmon;
+  }
+
 }
-
