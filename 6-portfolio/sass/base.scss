@@ -27,26 +27,25 @@ html {
   font-size: 62.5%;
 }
 
-body {
+#main-container {
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
   background: $color-bg-primary;
   background: linear-gradient(90deg, rgba(14,14,14,1) 0%, rgba(61,61,61,1) 100%);
   color: $color-primary;
-  
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 100vh 70vh 100vh 100vh;
+  grid-gap: 1rem;
 }
 
-section,header{
-  width: 100vw;
+
+
+@media screen and (max-width:$bp-large){
+  .container{
+    background: salmon;
+  }
 }
-
-.container {
-  width: $bp-large;
-  margin: 0 auto;
-
-  
-}
-
 @media screen and (max-width:$bp-medium){
   .container{
     background: red;

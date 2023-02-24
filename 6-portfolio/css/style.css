@@ -1,4 +1,5 @@
 .about {
+  grid-column: 2 / span 10;
   background-color: yellowgreen; }
 
 *,
@@ -14,19 +15,20 @@ html {
   box-sizing: border-box;
   font-size: 62.5%; }
 
-body {
+#main-container {
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
   background: #0e0e0e;
   background: linear-gradient(90deg, #0e0e0e 0%, #3d3d3d 100%);
-  color: #dedddd; }
+  color: #dedddd;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 100vh 70vh 100vh 100vh;
+  grid-gap: 1rem; }
 
-section, header {
-  width: 100vw; }
-
-.container {
-  width: 1440px;
-  margin: 0 auto; }
+@media screen and (max-width: 1440px) {
+  .container {
+    background: salmon; } }
 
 @media screen and (max-width: 600px) {
   .container {
@@ -45,10 +47,11 @@ section, header {
   border-radius: .5rem; }
 
 .header {
-  height: 100vh; }
+  grid-column: 2 / span 10; }
   .header .container .nav {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     height: 8rem; }
     .header .container .nav .nav__items {
@@ -67,7 +70,9 @@ section, header {
       margin-left: 4rem; }
 
 .portfolio {
+  grid-column: 2 / span 10;
   background-color: violet; }
 
 .contact {
+  grid-column: 2 / span 10;
   background-color: salmon; }
